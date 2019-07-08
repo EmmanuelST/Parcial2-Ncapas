@@ -67,6 +67,18 @@
     <Compile Include="rAsignatura.Designer.cs">
       <DependentUpon>rAsignatura.cs</DependentUpon>
     </Compile>
+    <Compile Include="rEstudiante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rEstudiante.Designer.cs">
+      <DependentUpon>rEstudiante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rInscripciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rInscripciones.Designer.cs">
+      <DependentUpon>rInscripciones.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -82,6 +94,12 @@
     </Compile>
     <EmbeddedResource Include="rAsignatura.resx">
       <DependentUpon>rAsignatura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rEstudiante.resx">
+      <DependentUpon>rEstudiante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rInscripciones.resx">
+      <DependentUpon>rInscripciones.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
