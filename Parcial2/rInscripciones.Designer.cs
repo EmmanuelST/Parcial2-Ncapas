@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(rInscripciones));
             this.label9 = new System.Windows.Forms.Label();
             this.PrecioCreditosnumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.label8 = new System.Windows.Forms.Label();
@@ -55,12 +57,14 @@
             this.BuscarInscripcionbutton = new System.Windows.Forms.Button();
             this.IdInscripcionnumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
+            this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.PrecioCreditosnumericUpDown)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.IdAsignaturanumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AsignaturasdataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.IdEstudiantenumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.IdInscripcionnumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // label9
@@ -106,6 +110,7 @@
             this.EliminarFilabutton.Text = "Eliminar Fila";
             this.EliminarFilabutton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.EliminarFilabutton.UseVisualStyleBackColor = true;
+            this.EliminarFilabutton.Click += new System.EventHandler(this.EliminarFilabutton_Click);
             // 
             // Eliminarbutton
             // 
@@ -118,6 +123,7 @@
             this.Eliminarbutton.Text = "Eliminar";
             this.Eliminarbutton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Eliminarbutton.UseVisualStyleBackColor = true;
+            this.Eliminarbutton.Click += new System.EventHandler(this.Eliminarbutton_Click);
             // 
             // Guardarbutton
             // 
@@ -130,6 +136,7 @@
             this.Guardarbutton.Text = "Guardar";
             this.Guardarbutton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Guardarbutton.UseVisualStyleBackColor = true;
+            this.Guardarbutton.Click += new System.EventHandler(this.Guardarbutton_Click);
             // 
             // Nuevobutton
             // 
@@ -142,6 +149,7 @@
             this.Nuevobutton.Text = "Nuevo";
             this.Nuevobutton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Nuevobutton.UseVisualStyleBackColor = true;
+            this.Nuevobutton.Click += new System.EventHandler(this.Nuevobutton_Click);
             // 
             // TotaltextBox
             // 
@@ -201,6 +209,7 @@
             this.BuscarAsignaturabutton.Size = new System.Drawing.Size(30, 23);
             this.BuscarAsignaturabutton.TabIndex = 8;
             this.BuscarAsignaturabutton.UseVisualStyleBackColor = true;
+            this.BuscarAsignaturabutton.Click += new System.EventHandler(this.BuscarAsignaturabutton_Click);
             // 
             // IdAsignaturanumericUpDown
             // 
@@ -237,6 +246,7 @@
             this.Agregarbutton.Size = new System.Drawing.Size(40, 36);
             this.Agregarbutton.TabIndex = 4;
             this.Agregarbutton.UseVisualStyleBackColor = true;
+            this.Agregarbutton.Click += new System.EventHandler(this.Agregarbutton_Click);
             // 
             // FechadateTimePicker
             // 
@@ -284,6 +294,7 @@
             this.BuscarEstudiantebutton.Text = "Buscar";
             this.BuscarEstudiantebutton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BuscarEstudiantebutton.UseVisualStyleBackColor = true;
+            this.BuscarEstudiantebutton.Click += new System.EventHandler(this.BuscarEstudiantebutton_Click);
             // 
             // IdEstudiantenumericUpDown
             // 
@@ -317,6 +328,7 @@
             this.BuscarInscripcionbutton.Text = "Buscar";
             this.BuscarInscripcionbutton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BuscarInscripcionbutton.UseVisualStyleBackColor = true;
+            this.BuscarInscripcionbutton.Click += new System.EventHandler(this.BuscarInscripcionbutton_Click);
             // 
             // IdInscripcionnumericUpDown
             // 
@@ -338,6 +350,11 @@
             this.label1.Size = new System.Drawing.Size(73, 13);
             this.label1.TabIndex = 27;
             this.label1.Text = "Inscripcion Id:";
+            // 
+            // errorProvider
+            // 
+            this.errorProvider.ContainerControl = this;
+            this.errorProvider.Icon = ((System.Drawing.Icon)(resources.GetObject("errorProvider.Icon")));
             // 
             // rInscripciones
             // 
@@ -373,6 +390,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.AsignaturasdataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.IdEstudiantenumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.IdInscripcionnumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -407,5 +425,6 @@
         private System.Windows.Forms.Button BuscarInscripcionbutton;
         private System.Windows.Forms.NumericUpDown IdInscripcionnumericUpDown;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ErrorProvider errorProvider;
     }
 }

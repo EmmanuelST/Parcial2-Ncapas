@@ -66,18 +66,21 @@
             this.registroDeEstudiantesToolStripMenuItem.Name = "registroDeEstudiantesToolStripMenuItem";
             this.registroDeEstudiantesToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
             this.registroDeEstudiantesToolStripMenuItem.Text = "Registro de &Estudiantes";
+            this.registroDeEstudiantesToolStripMenuItem.Click += new System.EventHandler(this.RegistroDeEstudiantesToolStripMenuItem_Click);
             // 
             // registroDeAsignaturasToolStripMenuItem
             // 
             this.registroDeAsignaturasToolStripMenuItem.Name = "registroDeAsignaturasToolStripMenuItem";
             this.registroDeAsignaturasToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
             this.registroDeAsignaturasToolStripMenuItem.Text = "Registro de &Asignaturas";
+            this.registroDeAsignaturasToolStripMenuItem.Click += new System.EventHandler(this.RegistroDeAsignaturasToolStripMenuItem_Click);
             // 
             // inscripcionesToolStripMenuItem
             // 
             this.inscripcionesToolStripMenuItem.Name = "inscripcionesToolStripMenuItem";
             this.inscripcionesToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
             this.inscripcionesToolStripMenuItem.Text = "&Inscripciones";
+            this.inscripcionesToolStripMenuItem.Click += new System.EventHandler(this.InscripcionesToolStripMenuItem_Click);
             // 
             // consultasToolStripMenuItem
             // 
@@ -94,18 +97,21 @@
             this.consultarAsignaturasToolStripMenuItem.Name = "consultarAsignaturasToolStripMenuItem";
             this.consultarAsignaturasToolStripMenuItem.Size = new System.Drawing.Size(209, 22);
             this.consultarAsignaturasToolStripMenuItem.Text = "Consultar &Asignaturas";
+            this.consultarAsignaturasToolStripMenuItem.Click += new System.EventHandler(this.ConsultarAsignaturasToolStripMenuItem_Click);
             // 
             // consultarEstudiantesToolStripMenuItem
             // 
             this.consultarEstudiantesToolStripMenuItem.Name = "consultarEstudiantesToolStripMenuItem";
             this.consultarEstudiantesToolStripMenuItem.Size = new System.Drawing.Size(209, 22);
             this.consultarEstudiantesToolStripMenuItem.Text = "Consultar &Estudiantes";
+            this.consultarEstudiantesToolStripMenuItem.Click += new System.EventHandler(this.ConsultarEstudiantesToolStripMenuItem_Click);
             // 
             // consultaDeInscripcionesToolStripMenuItem
             // 
             this.consultaDeInscripcionesToolStripMenuItem.Name = "consultaDeInscripcionesToolStripMenuItem";
             this.consultaDeInscripcionesToolStripMenuItem.Size = new System.Drawing.Size(209, 22);
             this.consultaDeInscripcionesToolStripMenuItem.Text = "Consulta de &Inscripciones";
+            this.consultaDeInscripcionesToolStripMenuItem.Click += new System.EventHandler(this.ConsultaDeInscripcionesToolStripMenuItem_Click);
             // 
             // MainForm
             // 
