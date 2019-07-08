@@ -53,6 +53,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="cAsiganturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cAsiganturas.Designer.cs">
+      <DependentUpon>cAsiganturas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cEstudiantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cEstudiantes.Designer.cs">
+      <DependentUpon>cEstudiantes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cInscripciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cInscripciones.Designer.cs">
+      <DependentUpon>cInscripciones.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,6 +97,15 @@
     <Compile Include="rInscripciones.Designer.cs">
       <DependentUpon>rInscripciones.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="cAsiganturas.resx">
+      <DependentUpon>cAsiganturas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cEstudiantes.resx">
+      <DependentUpon>cEstudiantes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cInscripciones.resx">
+      <DependentUpon>cInscripciones.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -138,6 +165,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\remover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{41E91A0B-D8D6-4900-8F52-2E43E70E9B5A}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{47E06BD3-AF00-4513-A08C-F800EE8420DD}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
