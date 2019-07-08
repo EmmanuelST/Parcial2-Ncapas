@@ -14,7 +14,6 @@ namespace Parcial2
 {
     public partial class rAsignatura : Form
     {
-       
 
         public rAsignatura()
         {

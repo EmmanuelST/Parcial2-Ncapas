@@ -42,7 +42,7 @@
             this.ConsultadataGridView.AllowUserToAddRows = false;
             this.ConsultadataGridView.AllowUserToDeleteRows = false;
             this.ConsultadataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ConsultadataGridView.Location = new System.Drawing.Point(4, 45);
+            this.ConsultadataGridView.Location = new System.Drawing.Point(8, 36);
             this.ConsultadataGridView.Name = "ConsultadataGridView";
             this.ConsultadataGridView.ReadOnly = true;
             this.ConsultadataGridView.Size = new System.Drawing.Size(562, 368);
@@ -50,14 +50,16 @@
             // 
             // Buscarbutton
             // 
+            this.Buscarbutton.Image = global::Parcial2.Properties.Resources.buscaTyni;
             this.Buscarbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Buscarbutton.Location = new System.Drawing.Point(486, 7);
+            this.Buscarbutton.Location = new System.Drawing.Point(495, 7);
             this.Buscarbutton.Name = "Buscarbutton";
             this.Buscarbutton.Size = new System.Drawing.Size(75, 23);
             this.Buscarbutton.TabIndex = 16;
             this.Buscarbutton.Text = "Buscar";
             this.Buscarbutton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Buscarbutton.UseVisualStyleBackColor = true;
+            this.Buscarbutton.Click += new System.EventHandler(this.Buscarbutton_Click);
             // 
             // CriteriotextBox
             // 
@@ -100,7 +102,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(570, 417);
+            this.ClientSize = new System.Drawing.Size(577, 411);
             this.Controls.Add(this.ConsultadataGridView);
             this.Controls.Add(this.Buscarbutton);
             this.Controls.Add(this.CriteriotextBox);
